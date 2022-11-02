@@ -8,7 +8,7 @@ User structure for mutation (create user):
 {
     first_name: “Juan”,
     last_name: “Sanchez”,
-    address: “asd -asd #25 – 57”,
+    address: “123 Fake St”,
     recommended: false
 }
 ```
@@ -20,7 +20,7 @@ Response from query (get user list)
     {
         first_name: “Juan”,
         last_name: “Sanchez”,
-        address: “asd -asd #25 – 57”,
+        address: “123 Fake St”,
         recommended: false
     },
 ]
