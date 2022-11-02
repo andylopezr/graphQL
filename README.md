@@ -1,5 +1,5 @@
 # GraphQL API with Python and Flask
-<img src="https://i.imgur.com/9Ejx0tt.png">
+<img src="https://graphql.org/img/og-image.png">
 
 > Backend API using GraphQL architecture, receivesd a mutation to create a user and a query to get the list of users. 
 * User structure for mutation (create user):
