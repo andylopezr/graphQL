@@ -26,18 +26,18 @@ Playground running on:
 
     ``` bash
     query all_users {
-    list_users {
-        success
-        errors
-        users {
-        id
-        first_name
-        last_name
-        address
-        recommended
-        created_at
+        list_users {
+            success
+            errors
+            users {
+                id
+                first_name
+                last_name
+                address
+                recommended
+                created_at
+            }
         }
-    }
     }
     ```
 
@@ -45,18 +45,18 @@ Playground running on:
 
     ``` bash
     query get_user {
-    get_user(id: "1") {
-        user {
-        id
-        first_name
-        last_name
-        address
-        recommended
-        created_at
+        get_user(id: "1") {
+            user {
+                id
+                first_name
+                last_name
+                address
+                recommended
+                created_at
+            }
+            success
+            errors
         }
-        success
-        errors
-    }
     }
     ```
 
@@ -66,21 +66,21 @@ Playground running on:
 
     ``` bash
     mutation create_user {
-    create_user(
-        first_name: "Jhon",
-        last_name: "Cena",
-        address: "34 Evergreen Av",
-        recommended: true) {
-        user {
-        id
-        first_name
-        last_name
-        address
-        recommended
+        create_user(
+            first_name: "Jhon",
+            last_name: "Cena",
+            address: "34 Evergreen Av",
+            recommended: true) {
+            user {
+                id
+                first_name
+                last_name
+                address
+                recommended
+            }
+            success
+            errors
         }
-        success
-        errors
-    }
     }
     ```
 
@@ -88,22 +88,21 @@ Playground running on:
 
     ``` bash
     mutation update_user {
-    update_user(
-        id:"4", 
-        first_name:"Travis", 
-        last_name:"Baker", 
-        address:"32 Daydream St", 
-        recommended:true
-    ) {
-        user {
-        id
-        first_name
-        last_name
-        address
+        update_user(
+            id:"4", 
+            first_name:"Travis", 
+            last_name:"Baker", 
+            address:"32 Daydream St", 
+            recommended:true) {
+            user {
+                id
+                first_name
+                last_name
+                address
+            }
+            success
+            errors
         }
-        success
-        errors
-    }
     }
     ```
 
@@ -111,16 +110,16 @@ Playground running on:
 
     ``` bash
     mutation delete_user {
-    delete_user(id:"5") {
-        success
-        errors
-        user {
-        id
-        first_name
-        last_name
-        address
+        delete_user(id:"5") {
+            success
+            errors
+            user {
+                id
+                first_name
+                last_name
+                address
+            }
         }
-    }
     }
     ```
 
