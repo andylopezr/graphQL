@@ -25,3 +25,7 @@ Response from query (get user list)
     },
 ]
 ```
+
+>  Instructions
+
+Run venv ```source graph/bin/activate```
