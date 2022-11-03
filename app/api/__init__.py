@@ -1,4 +1,4 @@
-from flask import Flask, g
+from flask import Flask
 import sqlite3
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
